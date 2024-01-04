@@ -87,7 +87,7 @@ export const ServerSearch = ({
                             <CommandGroup key={label} heading={label}>
                                 {data?.map(({ id, icon, name }) => {
                                     return (
-                                        <CommandItem key={id} onSelect={() => onClick({ id, type })}>
+                                        <CommandItem key={id} value={id} onSelect={() => onClick({ id, type })}>
                                             {icon}
                                             <span>{name}</span>
                                         </CommandItem>
