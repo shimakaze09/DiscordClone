@@ -48,8 +48,7 @@ export const DeleteServerModal = () => {
                         Delete &quot;{server?.name}&quot;
                     </DialogTitle>
                     <DialogDescription className="text-center text-zinc-500">
-                        Are you sure you want to do this? <br />
-                        <span className="font-semibold">{server?.name}</span> will be permanently deleted.
+                        Are you sure you want to delete <span className="font-semibold">{server?.name}</span>? This action cannot be undone.
                     </DialogDescription>
                 </DialogHeader>
                 <DialogFooter className="bg-gray-100 px-6 py-4">
